@@ -19,15 +19,3 @@ Buttons.propTypes = {
 };
 
 export default Buttons;
-
-// import PropTypes from 'prop-types';
-
-// import React from 'react';
-
-// const Buttons = ({ color, sign }) => (
-//   <div className="flex">
-//     <button className="btn" style={{ backgroundColor: color }} type="button">{sign}</button>
-//   </div>
-// );
-
-// export default Buttons;
