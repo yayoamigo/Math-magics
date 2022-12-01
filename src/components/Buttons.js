@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export class Buttons extends React.PureComponent {
   render() {
-    const { color } = this.props;
-    const { sign } = this.props;
+    const { color, sign, onClick } = this.props;
+
     return (
       <div className="flex">
-        <button className="btn" style={{ backgroundColor: color }} type="button">{sign}</button>
+        <button onClick={onClick} className="btn" style={{ backgroundColor: color }} type="button">{sign}</button>
       </div>
     );
   }
@@ -16,6 +16,7 @@ export class Buttons extends React.PureComponent {
 Buttons.propTypes = {
   color: PropTypes.string.isRequired,
   sign: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Buttons;
