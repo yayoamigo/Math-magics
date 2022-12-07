@@ -12,39 +12,44 @@ function Calculator() {
   const { total, next, operation } = state;
   const handleClick = (e) => { setState(calculate(state, e.target.innerHTML)); };
   return (
-    <div className="container">
-      <Display value={`${total || ''} ${operation || ''} ${next || ''}`} />
-      <div className="regular-btn-line">
-        <Buttons onClick={handleClick} color="lightgrey" sign="AC" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="+/-" />
-        <Buttons conClick={handleClick} color="lightgrey" sign="%" />
-        <Buttons onClick={handleClick} color="orange" sign="÷" />
+    <section className="CalcuSection">
+      <div className="CalTitle">
+        <h2>Lets do some math</h2>
       </div>
-      <div className="regular-btn-line">
-        <Buttons onClick={handleClick} color="lightgrey" sign="7" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="8" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="9" />
-        <Buttons onClick={handleClick} color="orange" sign="x" />
-      </div>
-      <div className="regular-btn-line">
-        <Buttons onClick={handleClick} color="lightgrey" sign="4" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="5" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="6" />
-        <Buttons onClick={handleClick} color="orange" sign="-" />
-      </div>
-      <div className="regular-btn-line">
-        <Buttons onClick={handleClick} color="lightgrey" sign="1" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="2" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="3" />
-        <Buttons onClick={handleClick} color="orange" sign="+" />
-      </div>
-      <div className="last-btn-line">
-        <Buttons onClick={handleClick} color="lightgrey" sign="0" />
-        <Buttons onClick={handleClick} color="lightgrey" sign="." />
-        <Buttons onClick={handleClick} color="orange" sign="=" />
-      </div>
+      <div className="container">
+        <Display value={`${total || ''} ${operation || ''} ${next || ''}`} />
+        <div className="regular-btn-line">
+          <Buttons onClick={handleClick} color="lightgrey" sign="AC" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="+/-" />
+          <Buttons conClick={handleClick} color="lightgrey" sign="%" />
+          <Buttons onClick={handleClick} color="orange" sign="÷" />
+        </div>
+        <div className="regular-btn-line">
+          <Buttons onClick={handleClick} color="lightgrey" sign="7" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="8" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="9" />
+          <Buttons onClick={handleClick} color="orange" sign="x" />
+        </div>
+        <div className="regular-btn-line">
+          <Buttons onClick={handleClick} color="lightgrey" sign="4" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="5" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="6" />
+          <Buttons onClick={handleClick} color="orange" sign="-" />
+        </div>
+        <div className="regular-btn-line">
+          <Buttons onClick={handleClick} color="lightgrey" sign="1" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="2" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="3" />
+          <Buttons onClick={handleClick} color="orange" sign="+" />
+        </div>
+        <div className="last-btn-line">
+          <Buttons onClick={handleClick} color="lightgrey" sign="0" />
+          <Buttons onClick={handleClick} color="lightgrey" sign="." />
+          <Buttons onClick={handleClick} color="orange" sign="=" />
+        </div>
 
-    </div>
+      </div>
+    </section>
   );
 }
 
