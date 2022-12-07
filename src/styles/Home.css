@@ -1,0 +1,15 @@
+.home {
+ font-family: 'Kdam Thmor Pro', sans-serif;
+ margin: 3rem;
+ color: aliceblue;
+}
+
+.home h2 {
+ margin-bottom: 1rem;
+}
+
+.home p {
+ width: 100%;
+ text-align: left;
+ text-justify: inter-word;
+}
