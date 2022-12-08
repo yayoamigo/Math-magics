@@ -4,12 +4,20 @@
   padding: 0;
 }
 
+body {
+  background: linear-gradient(#0f0c29, #302b63, #24243e);
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  margin: 1rem;
+}
+
 .container {
-  max-width: 400px;
-  margin: 30px auto;
+  min-width: 400px;
   overflow: auto;
   min-height: 400px;
   padding: 0;
+  margin-right: 5rem;
 }
 
 .display {
@@ -42,4 +50,15 @@
   width: 100%;
   padding: 20px 25px;
   border: 1px solid rgba(80, 78, 78, 0.1);
+}
+
+.CalcuSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CalTitle {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin: 3rem;
+  color: aliceblue;
 }
